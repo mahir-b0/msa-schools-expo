@@ -1,0 +1,40 @@
+/* todo - mobile responsiveness? */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #e85d12;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#image-container img {
+    max-width: 300px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+input[type=number] {
+    width: 60px;
+}
+
+.hidden {
+    display: none;
+ }

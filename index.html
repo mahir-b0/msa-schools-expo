@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>MSA School Expo Store</title>
+</head>
+<body>
+
+
+<div id="intro">
+  <h1>Welcome to the UNSWMSA School Expo Store!</h1>
+  <p>Are you ready to begin?</p>
+  <button onclick="startGame()">Start</button>
+</div>
+
+<div id="store" class="hidden">
+  <h2>Store</h2>
+  <p><strong>Balance: $<span id="balance">100</span></strong></p>
+  <div>
+    <h3>Keffiyeh - $10</h3>
+    <div id="image-container">
+        <img src="assets/keffiyeh.JPG"></img>
+    </div>
+    <input type="number" id="keffiyehQty" value="0">
+    <button onclick="buy('Keffiyeh', 10)">Buy</button>
+  </div>
+  <div>
+    <h3>Time for Thai Plate - $15</h3>
+    <div id="image-container">
+        <img src="assets/tftplate.jpg"></img>
+    </div>
+    <input type="number" id="thaiQty" value="0">
+    <button onclick="buy('Thai', 15)">Buy</button>
+  </div>
+  <div>
+    <h3>MSA Hoodie - $40</h3>
+    <div id="image-container">
+        <img src="assets/hoodie.jpg"></img>
+    </div>
+    <input type="number" id="hoodieQty" value="0">
+    <button onclick="buy('Hoodie', 40)">Buy</button>
+  </div>
+  <div>
+    <h3>The entire MSA - $500</h3>
+    <div id="image-container">
+        <img src="assets/msalogo.png"></img>
+    </div>
+    <input type="number" id="msaQty" value="0">
+    <button onclick="buy('MSA', 500)">Buy</button>
+  </div>
+</div>
+
+<div id="win" class="hidden">
+  <h1>Allahumma barik! You solved the challenge!</h1>
+  <p>Please speak to Umar (President) or Afra (Vice President) to claim the entire MSA!</p>
+</div>
+</body>
+</html>
